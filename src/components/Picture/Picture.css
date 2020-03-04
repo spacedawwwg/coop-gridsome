@@ -1,0 +1,8 @@
+.coop-o-picture {
+  display: block;
+  background-size: cover;
+
+  &__fallback {
+    display: block;
+  }
+}
