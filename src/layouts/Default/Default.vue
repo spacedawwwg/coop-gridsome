@@ -1,9 +1,9 @@
 <template>
-  <transition name="fade" appear>
-    <main id="main" class="o-main">
-      <slot />
-    </main>
-  </transition>
+  <main id="main" class="o-main">
+    <slot />
+  </main>
 </template>
 
-<script src="./Default.js"></script>
+<script src="./Default.js" />
+
+<style src="./Default.css" />
