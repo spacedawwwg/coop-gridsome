@@ -29,7 +29,9 @@ export default ({ seo, extend }) => ({
     },
     {
       property: 'og:image',
-      content: seo.openGraphImage ? `https:${seo.openGraphImage.file.url}` : null
+      content: seo.openGraphImage
+        ? `https:${seo.openGraphImage.file.url}?w=1200&h=630&fit=crop`
+        : null
     },
     {
       property: 'og:description',
