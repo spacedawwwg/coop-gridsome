@@ -10,9 +10,6 @@ export default {
       seo: {
         ...this.$context.seo,
         url: this.$context.fullPath,
-      },
-      extend: {
-        titleTemplate: '%s'
       }
     });
   },
