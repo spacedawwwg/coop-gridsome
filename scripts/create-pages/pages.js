@@ -25,7 +25,10 @@ module.exports = async ({ createPage, graphql }) => {
     createPage({
       path: slug,
       component: path.resolve(__dirname, '../../src/templates/Page'),
-      context: node
+      context: {
+        ...node,
+        fullPath: slug
+      }
     });
   });
 };

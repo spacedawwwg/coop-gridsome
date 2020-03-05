@@ -1,3 +1,5 @@
+const baseUrl = process.env.GRIDSOME_SITE_URL || 'https://www.coop.co.uk';
+
 export default ({ seo, extend }) => ({
   title: seo.title,
   meta: [
@@ -13,7 +15,7 @@ export default ({ seo, extend }) => ({
     },
     {
       property: 'og:url',
-      content: process.env.GRIDSOME_SITE_URL || 'https://www.coop.co.uk'
+      content: baseUrl + (seo.url ? seo.url : '')
     },
     {
       property: 'og:title',

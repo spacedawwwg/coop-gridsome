@@ -7,7 +7,10 @@ export default {
   },
   metaInfo() {
     return toSeoMeta({
-      seo: this.$context.seo,
+      seo: {
+        ...this.$context.seo,
+        url: this.$context.fullPath,
+      },
       extend: {
         titleTemplate: '%s'
       }
