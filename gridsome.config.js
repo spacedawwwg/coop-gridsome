@@ -59,6 +59,9 @@ module.exports = {
         environment: process.env.CONTENTFUL_ENVIRONMENT,
         typeName: 'Contentful'
       }
+    },
+    {
+      use: 'gridsome-plugin-purgecss'
     }
   ],
   chainWebpack(config) {
