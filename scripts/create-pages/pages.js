@@ -1,5 +1,5 @@
 const path = require('path');
-const clonedeep = require('lodash/clonedeep');
+const cloneDeep = require('lodash/cloneDeep');
 const parseObjProps = require('../utils/parse-obj-props');
 
 module.exports = async ({ createPage, graphql }) => {
@@ -33,7 +33,7 @@ module.exports = async ({ createPage, graphql }) => {
   data.allContentfulPage.edges.forEach(({ node }) => {
     const slugParts = [node.slug];
     if (node.parentPage) {
-      const parentPages = clonedeep(node.parentPage);
+      const parentPages = cloneDeep(node.parentPage);
       parseObjProps(parentPages, slug => slug && slugParts.unshift(slug));
     }
     const slug = `/${slugParts.join('/')}`;
