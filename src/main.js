@@ -31,4 +31,10 @@ export default function(Vue, { router, head, isClient }) {
     rel: `preconnect`,
     href: `https://assets.digital.coop.co.uk/`
   });
+
+  head.link.push({
+    rel: `preconnect`,
+    href: `//images.ctfassets.net/`
+  });
+
 }

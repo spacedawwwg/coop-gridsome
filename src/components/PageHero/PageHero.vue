@@ -2,10 +2,9 @@
   <component :is="containerTag" class="coop-c-page-hero coop-c-page-hero--pull">
     <div class="coop-c-page-hero__inner">
       <figure class="coop-c-page-hero__media" v-if="media">
-        <Picture
-          v-bind="media"
-          class="coop-c-page-hero__media__image"
-        />
+        <a :href="cta.url" class="coop-c-page-hero__media__link">
+          <Picture v-bind="media" class="coop-c-page-hero__media__image" />
+        </a>
       </figure>
       <div class="coop-c-page-hero__content">
         <component :is="headerTag" class="coop-c-page-hero__title coop-t-h1">

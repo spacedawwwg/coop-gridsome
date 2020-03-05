@@ -33,8 +33,10 @@ module.exports = async ({ createPage, graphql }) => {
   data.allContentfulPage.edges.forEach(({ node }) => {
     const slugParts = [node.slug];
     if (node.parentPage) {
-      const parentPages = cloneDeep(node.parentPage);
-      parseObjProps(parentPages, slug => slug && slugParts.unshift(slug));
+      parseObjProps(
+        cloneDeep(node.parentPage),
+        slug => slug && slugParts.unshift(slug)
+      );
     }
     const slug = `/${slugParts.join('/')}`;
     createPage({
