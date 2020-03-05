@@ -13,7 +13,7 @@ export default ({ seo, extend }) => ({
     },
     {
       property: 'og:url',
-      content: 'https://www.coop.co.uk'
+      content: process.env.GRIDSOME_SITE_URL || 'https://www.coop.co.uk'
     },
     {
       property: 'og:title',
@@ -29,7 +29,7 @@ export default ({ seo, extend }) => ({
     },
     {
       property: 'og:image',
-      content: seo.openGraphImage ? seo.openGraphImage.file.url : null
+      content: seo.openGraphImage ? `https:${seo.openGraphImage.file.url}` : null
     },
     {
       property: 'og:description',
