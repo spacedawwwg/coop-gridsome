@@ -1,11 +1,12 @@
 import toPicture from './to-picture';
+import fullPath from '../utils/full-path';
 
 export default content => ({
   title: content.title,
   body: content.body,
   cta: {
     label: content.linkText,
-    href: content.linkReference.id
+    href: fullPath(content.linkReference)
   },
   media: toPicture({
     src: content.media,

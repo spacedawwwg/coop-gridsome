@@ -2,7 +2,7 @@
   <component :is="containerTag" class="coop-c-page-hero coop-c-page-hero--pull">
     <div class="coop-c-page-hero__inner">
       <figure class="coop-c-page-hero__media" v-if="media">
-        <a :href="cta.url" class="coop-c-page-hero__media__link">
+        <a :href="cta.href" class="coop-c-page-hero__media__link">
           <Picture v-bind="media" class="coop-c-page-hero__media__image" />
         </a>
       </figure>
@@ -16,7 +16,7 @@
           </p>
         </div>
         <div class="coop-c-page-hero__footer" v-if="cta">
-          <a :href="cta.url" class="coop-btn coop-btn--primary">
+          <a :href="cta.href" class="coop-btn coop-btn--primary">
             {{ cta.label }}
           </a>
         </div>

@@ -1,7 +1,7 @@
 const path = require('path');
+const fs = require('fs');
 const cloneDeep = require('lodash/cloneDeep');
 const parseObjProps = require('../utils/parse-obj-props');
-const fs = require('fs');
 const pagesQuery = fs.readFileSync(
   path.resolve(__dirname, '../graphql/all-pages.graphql'),
   'utf8'
