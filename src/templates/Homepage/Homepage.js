@@ -15,6 +15,9 @@ export default {
   },
   computed: {
     pageHeroContent() {
+      if (!this.$context.hero) {
+        return;
+      }
       return toPageHero(this.$context.hero);
     }
   }

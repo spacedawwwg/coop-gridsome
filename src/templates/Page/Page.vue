@@ -1,6 +1,7 @@
 <template>
   <Layout>
-    <h1>{{$context.title}}</h1>
+    <PageHero v-bind="pageHeroContent" header-tag="h1" v-if="$context.hero" />
+    <h1 v-else>{{ $context.title }}</h1>
   </Layout>
 </template>
 
