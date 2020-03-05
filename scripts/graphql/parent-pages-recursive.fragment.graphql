@@ -1,0 +1,11 @@
+fragment ParentPageRecursive on ContentfulPage {
+  parentPage {
+    slug
+    parentPage {
+      slug
+      parentPage {
+        slug
+      }
+    }
+  }
+}

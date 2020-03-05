@@ -1,0 +1,48 @@
+query {
+  allContentfulPage {
+    edges {
+      node {
+        id
+        title
+        slug
+        hero {
+          id
+          title
+          media {
+            title
+            description
+            file {
+              url
+              details {
+                image {
+                  width
+                  height
+                }
+              }
+              fileName
+              contentType
+            }
+          }
+          body
+          linkText
+          linkReference {
+            slug
+            ...ParentPageRecursive
+          }
+        }
+        body
+        seo {
+          title
+          description
+          keywords
+          openGraphImage {
+            file {
+              url
+            }
+          }
+        }
+        ...ParentPageRecursive
+      }
+    }
+  }
+}

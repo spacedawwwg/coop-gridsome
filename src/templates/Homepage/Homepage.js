@@ -1,4 +1,4 @@
-import { toPageHero } from '../../mappings';
+import { toPageHero, toSeoMeta } from '../../mappings';
 import PageHero from '../../components/PageHero';
 
 export default {
@@ -6,20 +6,16 @@ export default {
     PageHero
   },
   metaInfo() {
-    return {
-      title: this.$context.homepage.title || 'this is the title',
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: this.$context.homepage.body || 'this is the description'
-        }
-      ]
-    };
+    return toSeoMeta({
+      seo: this.$context.seo,
+      extend: {
+        titleTemplate: '%s'
+      }
+    });
   },
   computed: {
     pageHeroContent() {
-      return toPageHero(this.$context.homepage.hero);
+      return toPageHero(this.$context.hero);
     }
   }
 };

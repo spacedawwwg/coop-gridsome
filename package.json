@@ -23,6 +23,8 @@
     "contentful": "^7.13.1",
     "contentful-rich-text-vue-renderer": "^1.1.3",
     "dotenv": "^8.2.0",
+    "graphql-import": "^1.0.0-beta.1",
+    "graphql.macro": "^1.4.2",
     "gridsome": "0.7.12",
     "gridsome-plugin-purgecss": "^1.0.12",
     "normalize.css": "^8.0.1",

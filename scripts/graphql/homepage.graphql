@@ -1,0 +1,40 @@
+query {
+  contentfulHomepage(id: "5V07J4dWi6tjnMODoJg3Pu") {
+    title
+    hero {
+      id
+      title
+      media {
+        title
+        description
+        file {
+          url
+          details {
+            image {
+              width
+              height
+            }
+          }
+          fileName
+          contentType
+        }
+      }
+      body
+      linkText
+      linkReference {
+        slug
+        ...ParentPageRecursive
+      }
+    }
+    seo {
+      title
+      description
+      keywords
+      openGraphImage {
+        file {
+          url
+        }
+      }
+    }
+  }
+}
