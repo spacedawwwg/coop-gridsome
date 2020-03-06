@@ -23,5 +23,5 @@ export default ({ src, sourceSettings }) => ({
       type: 'image/jpeg'
     }
   ]),
-  lqip: `${src.file.url}?w=10&fm=png&fl=png8`
+  lqip: src.file.lqip
 });
