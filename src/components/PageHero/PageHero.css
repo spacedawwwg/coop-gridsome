@@ -2,15 +2,15 @@
   overflow-x: hidden;
 
   &--pull {
-    @media (--mq-medium) {
+    @media (--mq-md) {
       margin-bottom: -6rem;
     }
 
-    @media (--mq-large) {
+    @media (--mq-lg) {
       margin-bottom: -8rem;
     }
 
-    @media (--mq-xlarge) {
+    @media (--mq-xl) {
       margin-bottom: -12.5rem;
     }
   }
@@ -21,17 +21,17 @@
     margin: 0 auto;
     position: relative;
 
-    @media (--mq-medium) {
+    @media (--mq-md) {
       padding: 32px 16px 0;
     }
 
-    @media (--mq-large) {
+    @media (--mq-lg) {
       padding: 32px 24px 0;
       display: flex;
       flex-direction: row-reverse;
     }
 
-    @media (--mq-xlarge) {
+    @media (--mq-xl) {
       padding: 48px 16px 0;
     }
 
@@ -44,15 +44,15 @@
   }
 
   &--pull &__inner {
-    @media (--mq-medium) {
+    @media (--mq-md) {
       padding-bottom: 8rem;
     }
 
-    @media (--mq-large) {
+    @media (--mq-lg) {
       padding-bottom: 10rem;
     }
 
-    @media (--mq-xlarge) {
+    @media (--mq-xl) {
       padding-bottom: 16rem;
     }
   }
@@ -61,12 +61,12 @@
     position: relative;
     z-index: 2;
 
-    @media (--mq-large) {
+    @media (--mq-lg) {
       padding-right: 64px;
       flex-basis: 42.2535211268%;
     }
 
-    @media (--mq-xlarge) {
+    @media (--mq-xl) {
       flex-basis: 42.7215189873%;
     }
 
@@ -88,12 +88,12 @@
     position: relative;
     z-index: 2;
 
-    @media (--mq-large) {
+    @media (--mq-lg) {
       flex-basis: 57.7464788732%;
       margin: 0;
     }
 
-    @media (--mq-xlarge) {
+    @media (--mq-xl) {
       flex-basis: 57.2784810127%;
     }
 
@@ -104,12 +104,12 @@
       background-size: cover;
       width: 100%;
 
-      @media (--mq-large) {
+      @media (--mq-lg) {
         width: calc(100% + 24px);
         max-width: none;
       }
 
-      @media (--mq-xlarge) {
+      @media (--mq-xl) {
         width: calc(100% + 16px);
       }
     }
@@ -141,19 +141,19 @@
     top: -650px;
     left: 60%;
 
-    @media (--mq-small) {
+    @media (--mq-sm) {
       width: 1800px;
       top: -1300px;
       left: 40%;
     }
 
-    @media (--mq-medium) {
+    @media (--mq-md) {
       width: 2700px;
       top: -2000px;
       left: 35%;
     }
 
-    @media (--mq-large) {
+    @media (--mq-lg) {
       left: 300px;
       width: 3000px;
       top: auto;

@@ -1,3 +1,8 @@
 import 'what-input';
+import Header from './components/Header'
 
-export default {};
+export default {
+  components:{
+    Header
+  }
+};

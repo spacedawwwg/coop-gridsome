@@ -1,5 +1,6 @@
 <template>
   <div class="coop-o-page">
+    <Header />
     <router-view />
   </div>
 </template>
