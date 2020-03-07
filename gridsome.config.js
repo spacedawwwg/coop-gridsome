@@ -64,6 +64,7 @@ module.exports = {
       use: 'gridsome-plugin-purgecss'
     }
   ],
+  configureWebpack: {},
   chainWebpack(config) {
     const types = ['vue-modules', 'vue', 'normal-modules', 'normal'];
     types.forEach(type => {
