@@ -4,5 +4,6 @@
 
   &__fallback {
     display: block;
+    opacity: 0;
   }
 }

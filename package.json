@@ -28,6 +28,7 @@
     "gridsome-plugin-purgecss": "^1.0.12",
     "normalize.css": "^8.0.1",
     "serve": "^11.3.0",
+    "vue": "^2.6.11",
     "vue-click-outside": "^1.0.7",
     "vue-focus-lock": "^1.4.0",
     "webpack": "^4.42.0",

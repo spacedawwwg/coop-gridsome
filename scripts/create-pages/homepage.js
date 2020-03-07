@@ -1,6 +1,6 @@
 const path = require('path');
 const fs = require('fs');
-const getImageData = require('../utils/get-image-data');
+const getImageLqipData = require('../utils/get-image-lqip-data');
 const contentfulLqipSrc = require('../utils/contentful-lqip-src');
 const homepageQuery = fs.readFileSync(
   path.resolve(__dirname, '../graphql/homepage.graphql'),
@@ -16,7 +16,7 @@ module.exports = async ({ createPage, graphql }) => {
   const context = { ...data.contentfulHomepage };
   // lqip
   if (context.hero) {
-    const lqip = await getImageData(
+    const lqip = await getImageLqipData(
       contentfulLqipSrc(context.hero.media.file.url)
     );
     context.hero.media.file.lqip = lqip;
