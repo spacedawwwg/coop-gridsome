@@ -19,6 +19,12 @@ export default {
         return;
       }
       return toPageHero(this.$context.hero);
+    },
+    pageHero2Content() {
+      if (!this.$context.hero2) {
+        return;
+      }
+      return toPageHero(this.$context.hero2);
     }
   }
 };

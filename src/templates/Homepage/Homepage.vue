@@ -1,8 +1,5 @@
 <template>
-  <Layout>
-    <h1 class="coop-u-visuallyhidden">
-      {{ $context.seo.title }}
-    </h1>
+  <Layout :title="$context.seo.title">
     <PageHero v-bind="pageHeroContent" container-tag="article" />
   </Layout>
 </template>

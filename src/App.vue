@@ -1,7 +1,7 @@
 <template>
   <div class="coop-o-page">
     <Header />
-    <router-view />
+    <RouterView />
   </div>
 </template>
 

@@ -1,8 +1,17 @@
 <template>
   <picture
     class="coop-o-picture"
-    :style="{ 'background-image': `url(${lqip})` }"
+    :class="{ 'is-aspect-ratio': maintainAspectRatio }"
+    :style="{
+      'background-image': `url(${dataUri})`
+    }"
+    ref="picture"
   >
+    <div
+      class="coop-o-picture__aspect-ratio"
+      :style="{ 'padding-top': paddingTopPercentage }"
+      aria-hidden="true"
+    />
     <template v-if="sources">
       <source
         v-for="(source, index) in sources"
@@ -17,7 +26,9 @@
       :alt="alt"
       :width="width"
       :height="height"
-      class="coop-o-picture__fallback"
+      class="coop-o-picture__image"
+      loading="lazy"
+      ref="image"
     />
   </picture>
 </template>

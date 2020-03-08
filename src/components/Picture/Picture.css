@@ -1,8 +1,24 @@
 .coop-o-picture {
   display: block;
   background-size: cover;
+  position: relative;
 
-  &__fallback {
+  &__aspect-ratio {
+    content: '';
     display: block;
+    position: relative;
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  &.is-aspect-ratio &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
   }
 }

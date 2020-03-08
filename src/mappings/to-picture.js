@@ -23,5 +23,5 @@ export default ({ src, sourceSettings }) => ({
       type: 'image/jpeg'
     }
   ]),
-  lqip: src.file.lqip
+  dataUri: src.file.dataUri
 });

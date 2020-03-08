@@ -20,9 +20,17 @@ export default {
       type: Number,
       default: null
     },
-    lqip: {
+    dataUri: {
       type: String,
       default: null
+    }
+  },
+  computed: {
+    maintainAspectRatio() {
+      return this.height && this.width;
+    },
+    paddingTopPercentage() {
+      return this.maintainAspectRatio ? `${(this.height / this.width) * 100}%` : null;
     }
   }
 };

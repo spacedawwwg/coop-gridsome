@@ -27,12 +27,12 @@ module.exports = async ({ createPage, graphql }) => {
     }
     const slug = `/${slugParts.join('/')}`;
     context.fullPath = slug;
-    // lqip
+    // lqip data uri
     if (context.hero) {
       const lqip = await getImageLqipData(
         contentfulLqipSrc(context.hero.media.file.url)
       );
-      context.hero.media.file.lqip = lqip;
+      context.hero.media.file.dataUri = lqip;
     }
     createPage({
       path: slug,
