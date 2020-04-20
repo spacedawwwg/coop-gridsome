@@ -1,3 +1,5 @@
+#import { ParentPageRecursive } from './parent-pages-recursive.fragment.graphql'
+
 query {
   allContentfulPage {
     edges {

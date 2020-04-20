@@ -49,6 +49,7 @@ const postcssPlugins = [
 
 module.exports = {
   siteName: 'Co-op',
+  prefetch: { mask: '^$' }, // disable all prefetching
   plugins: [
     {
       use: '@gridsome/source-contentful',

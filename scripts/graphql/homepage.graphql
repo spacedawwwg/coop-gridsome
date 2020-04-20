@@ -1,3 +1,5 @@
+#import { ParentPageRecursive } from './parent-pages-recursive.fragment.graphql'
+
 query {
   contentfulHomepage(id: "5V07J4dWi6tjnMODoJg3Pu") {
     title
