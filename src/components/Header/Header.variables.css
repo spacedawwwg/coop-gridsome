@@ -1,0 +1,5 @@
+:root {
+  --header-height-sm: calc(var(--baseline) * 11);
+  --header-height-md: calc(var(--baseline) * 12);
+  --header-height-xl: calc(var(--baseline) * 14);
+}
