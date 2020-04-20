@@ -1,6 +1,6 @@
 <template>
   <picture
-    class="coop-o-picture"
+    class="coop-c-picture"
     :class="{ 'is-aspect-ratio': maintainAspectRatio }"
     :style="{
       'background-image': `url(${dataUri})`
@@ -8,7 +8,7 @@
     ref="picture"
   >
     <div
-      class="coop-o-picture__aspect-ratio"
+      class="coop-c-picture__aspect-ratio"
       :style="{ 'padding-top': paddingTopPercentage }"
       aria-hidden="true"
     />
@@ -26,7 +26,7 @@
       :alt="alt"
       :width="width"
       :height="height"
-      class="coop-o-picture__image"
+      class="coop-c-picture__image"
       loading="lazy"
       ref="image"
     />

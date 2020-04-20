@@ -1,24 +1,24 @@
-.coop-o-picture {
+.coop-c-picture {
   display: block;
   background-size: cover;
   position: relative;
+}
 
-  &__aspect-ratio {
-    content: '';
-    display: block;
-    position: relative;
-  }
+.coop-c-picture__aspect-ratio {
+  content: '';
+  display: block;
+  position: relative;
+}
 
-  &__image {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
+.coop-c-picture__image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
-  &.is-aspect-ratio &__image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-  }
+.coop-c-picture.is-aspect-ratio .coop-c-picture__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
 }

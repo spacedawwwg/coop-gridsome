@@ -1,0 +1,114 @@
+.coop-c-header-actions {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+  position: relative;
+  z-index: 1;
+  margin-right: -10px;
+
+  @media (--mq-xs) {
+    margin-right: -20px;
+  }
+
+  @media (--mq-lg) {
+    margin: 0;
+  }
+}
+
+.coop-c-header-actions__action {
+  color: var(--color-black);
+  display: block;
+  overflow: hidden;
+  background: none;
+  border: 0;
+  padding: var(--space3) var(--space2);
+  appearance: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+
+  @media (--mq-xs) {
+    padding: var(--space3);
+  }
+
+  @media (--mq-md) {
+    padding: var(--space4) 16px;
+  }
+
+  @media (--mq-lg) {
+    padding: calc(var(--baseline) * 5) 16px;
+  }
+
+  /* IE 10/11 */
+  @media all and (-ms-high-contrast: none) {
+    display: block;
+  }
+}
+
+.coop-c-header-actions__action.is-active {
+  background: var(--color-black);
+  color: var(--color-white);
+}
+
+.coop-c-header-actions__action:focus {
+  outline: 2px dashed var(--color-link-focus);
+  outline-offset: 2px;
+
+  [data-whatintent='mouse'] &,
+  [data-whatintent='touch'] & {
+    outline: none;
+  }
+}
+
+.coop-c-header-actions__action__label {
+  display: inline-block;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: calc(var(--baseline) * 4);
+  font-family: var(--font-sans-serif-bold);
+  text-transform: uppercase;
+  white-space: nowrap;
+  padding-left: 8px;
+
+  @media (--mq-lg) {
+    flex-basis: 12px;
+  }
+
+  @media (--mq-xl) {
+    flex-basis: 14px;
+  }
+}
+
+.coop-c-header-actions__action__icon {
+  display: inline-block;
+  flex-basis: 25px;
+
+  @media (--mq-md) {
+    flex-basis: 20px;
+  }
+
+  /* IE 10/11 */
+  @media all and (-ms-high-contrast: none) {
+    vertical-align: middle;
+  }
+}
+
+.coop-c-header-actions__action__svg {
+  fill: currentColor;
+  width: 25px;
+  height: 25px;
+  display: block;
+
+  @media (--mq-xl) {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.coop-c-header-actions__action--nav {
+  @media (--mq-lg) {
+    display: none;
+  }
+}

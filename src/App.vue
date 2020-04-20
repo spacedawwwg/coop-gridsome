@@ -1,6 +1,6 @@
 <template>
   <div class="coop-o-page">
-    <Header />
+    <Header :header-menu="headerMenu" site-url="https://coop.co.uk" />
     <RouterView />
   </div>
 </template>
